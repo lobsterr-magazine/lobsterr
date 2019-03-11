@@ -1,0 +1,49 @@
+$widthDesktopWide: 1280px;
+$widthDesktop: 960px;
+$widthAdjustProducts: 760px;
+$widthAdjustProducts: 800px;
+$widthTablet: 600px;
+$widthSmartphoneNarrow: 374px;
+
+
+@mixin pc {
+  @media (max-width: ($widthDesktopWide)) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media (max-width: ($widthDesktop)) {
+    @content;
+  }
+}
+
+@mixin adjustProducts {
+  @media (max-width: ($widthAdjustProducts)) {
+    @content;
+  }
+}
+
+@mixin adjustStores {
+  @media (max-width: ($widthAdjustProducts)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media (max-width: ($widthTablet)) {
+    @content;
+  }
+}
+
+@mixin sp-narrow {
+  @media (max-width: ($widthSmartphoneNarrow)) {
+    @content;
+  }
+}
+
+@mixin only-pc {
+  @media (min-width: ($widthTablet)) {
+    @content;
+  }
+}
