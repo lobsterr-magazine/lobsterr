@@ -4,7 +4,8 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: 80px;
+  padding: 16px 0px 16px 0px;
+  margin: 80px 0px 88px 0px;
 }
 
 .header__logo {
@@ -28,10 +29,10 @@ header {
       }
 
       a {
-        transition: color 0.3s;
+        transition: color 0.3s; //任意に変更してください
 
         &:hover {
-          color: $fontSelectColor;
+          color: $fontSelectColor; //任意に変更してください
         }
       }
     }

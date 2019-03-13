@@ -1,29 +1,39 @@
+@import "../config/variables";
+
 .member {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  // align-items: center;
   width: 100%;
-  max-width: 800px;
-  padding: 0px 0px 0px 0px;
-  margin: 0px 0px 120px 0px;
+  margin-bottom: 200px;
 
   &__title {
-    margin-bottom: 40px;
+    font-size: 2rem;
+    letter-spacing: 0.15rem;
+    margin-bottom: 64px;
   }
 
-  &__profile {
+  &__block {
     margin-bottom: 56px;
   }
 
-  &__name__kanji {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 24px;
+  &__name {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+    letter-spacing: 0.2rem;
+
+    span {
+      font-size: 1.8rem;
+      font-weight: 800;
+      margin-right: 24px;
+    }
   }
 
-  &__name__roman {
-    display: inline;
-    vertical-align: middle;
+  .profileLink {
+    display: inline-block;
+    margin-top: 8px;
+    color: #C94141;
+    transition: color 0.3s; //任意に変更してください
+
+    &:hover {
+      color: $fontSelectColor; //任意に変更してください
+    }
   }
 }
