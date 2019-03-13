@@ -16,7 +16,6 @@ $widthSmartphoneNarrow: 374px;
   }
 }
 
-
 @mixin sp {
   @media (max-width: ($widthTablet)) {
     @content;
