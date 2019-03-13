@@ -1,0 +1,1 @@
+header{display:flex;justify-content:space-between;width:100%;margin-top:80px}.header__logo{width:176px}.header__logo img{width:100%}.header__nav ul{display:flex}.header__nav ul li{line-height:1;margin-left:48px}.header__nav ul li:first-child{margin-left:0px}.header__nav ul li a{transition:color 0.3s}.header__nav ul li a:hover{color:#ff6868}

@@ -1,65 +1,106 @@
+@import "../config/variables";
+
 header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
-  max-width: 800px;
-  padding: 80px 0px 0px 0px;
-  margin: 0px 0px 0px 0px;
-  // position: fixed;
-
-  @include pc {
-    // flex-direction: row;
-  }
-  @include tab {
-    // flex-direction: row;
-  }
-  @include sp {
-    flex-direction: column;
-    padding: 40px 0px 0px 0px;
-  }
+  margin-top: 80px;
 }
 
-.header__title {
+.header__logo {
+  width: 176px;
+
   img {
-    height: 40px;
+    width: 100%;
   }
 }
 
 .header__nav {
-  font-size: 1.8rem;
-
-  // @include pc {
-  //   background-color: #F2F0ED;
-  // }
-  // @include tab {
-  //   background-color: rgba(0, 255, 0, 0.05);
-  // }
-  // @include sp {
-  //   background-color: rgba(0, 0, 255, 0.05);
-  // }
-
   ul {
     display: flex;
-    justify-content: flex-end;
 
     li {
-      margin-left: 56px;
+      line-height: 1;
+      margin-left: 48px;
 
-      @include pc {
-        // flex-direction: row;
+      &:first-child {
+        margin-left: 0px;
       }
-      @include tab {
-        // flex-direction: row;
-      }
-      @include sp {
-        flex-direction: column;
-        justify-content: center;
-        margin-left: 16px;
-        margin-right: 16px;
-        padding: 16px 0px 0px 0px;
+
+      a {
+        transition: color 0.3s;
+
+        &:hover {
+          color: $fontSelectColor;
+        }
       }
     }
   }
 }
+
+
+// header {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-between;
+//   align-items: center;
+//   width: 100%;
+//   max-width: 800px;
+//   padding: 80px 0px 0px 0px;
+//   margin: 0px 0px 0px 0px;
+//   // position: fixed;
+
+//   @include pc {
+//     // flex-direction: row;
+//   }
+//   @include tab {
+//     // flex-direction: row;
+//   }
+//   @include sp {
+//     flex-direction: column;
+//     padding: 40px 0px 0px 0px;
+//   }
+// }
+
+// .header__title {
+//   img {
+//     height: 40px;
+//   }
+// }
+
+// .header__nav {
+//   font-size: 1.8rem;
+
+//   // @include pc {
+//   //   background-color: #F2F0ED;
+//   // }
+//   // @include tab {
+//   //   background-color: rgba(0, 255, 0, 0.05);
+//   // }
+//   // @include sp {
+//   //   background-color: rgba(0, 0, 255, 0.05);
+//   // }
+
+//   ul {
+//     display: flex;
+//     justify-content: flex-end;
+
+//     li {
+//       margin-left: 56px;
+
+//       @include pc {
+//         // flex-direction: row;
+//       }
+//       @include tab {
+//         // flex-direction: row;
+//       }
+//       @include sp {
+//         flex-direction: column;
+//         justify-content: center;
+//         margin-left: 16px;
+//         margin-right: 16px;
+//         padding: 16px 0px 0px 0px;
+//       }
+//     }
+//   }
+// }

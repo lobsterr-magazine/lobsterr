@@ -4,25 +4,23 @@
 /* ---------------------------------------- */
 
 /* config-files */
-@import "./reset"; // reset-css
-@import "./mixin/fonts"; // font-face: ;
-@import "./mixin/resize"; // break-points
+@import "./reset";
+@import "./mixin/fonts";
+@import "./mixin/resize";
 @import "./config/variables";
 @import "./config/common";
 
 /* ---------------------------------------- */
 
 /* font-files */
-// @include font-face('AtlasGrotesk-Light', '/assets/font/AtlasGrotesk-Light.woff', woff);
-// @include font-face('AtlasGrotesk-Regular', '/assets/font/AtlasGrotesk-Regular.woff', woff);
-// @include font-face('PxGrotesk-Bold', '/assets/font/PxGrotesk-Bold.otf', otf);
 @include font-face("AGNextBold", "../font/AGNextBold.otf", otf);
+@include font-face("AGNextRegular", "../font/AGNextRegular.otf", otf);
 
 /* ---------------------------------------- */
 
 /* import-modules */
 @import "./modules/header";
-@import "./modules/registration";
-@import "./modules/member";
+// @import "./modules/registration";
+// @import "./modules/member";
 
 /* ---------------------------------------- */
