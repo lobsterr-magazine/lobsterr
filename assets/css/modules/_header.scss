@@ -43,7 +43,7 @@ header {
       }
 
       a {
-        transition: color 0.3s; //任意に変更してください
+        transition: color 0.1s; //任意に変更してください
 
         &:hover {
           color: $fontSelectColor; //任意に変更してください
@@ -52,7 +52,6 @@ header {
     }
   }
 }
-
 
 // header {
 //   display: flex;

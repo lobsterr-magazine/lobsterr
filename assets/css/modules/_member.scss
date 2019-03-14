@@ -38,7 +38,7 @@
     .name__jp {
       font-size: 1.8rem;
       font-weight: 800;
-      margin-right: 24px;
+      margin-right: 16px;
 
       @include sp {
         line-height: 1.6;
@@ -62,7 +62,7 @@
     .profileLink {
       display: block;
       margin-top: 8px;
-      color: #C94141;
+      color: #c94141;
       transition: color 0.3s; //任意に変更してください
 
       @include sp {
