@@ -11,7 +11,7 @@
   }
 
   @include sp {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 }
 
@@ -79,6 +79,7 @@
     background-color: #1f1934;
     transition: background-color 0.3s;
     transition: color 0.3s;
+    -webkit-appearance: none;
 
     @include tab {
       width: calc(25% - 8px);
