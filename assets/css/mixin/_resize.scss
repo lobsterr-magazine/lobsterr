@@ -1,0 +1,29 @@
+$widthDesktopWide: 1280px;
+$widthDesktop: 960px;
+$widthTablet: 600px;
+$widthSmartphoneNarrow: 374px;
+
+
+@mixin pc {
+  @media (max-width: ($widthDesktopWide)) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media (max-width: ($widthDesktop)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media (max-width: ($widthTablet)) {
+    @content;
+  }
+}
+
+@mixin sp-narrow {
+  @media (max-width: ($widthSmartphoneNarrow)) {
+    @content;
+  }
+}

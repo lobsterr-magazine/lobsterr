@@ -1,0 +1,26 @@
+/* character-encoding */
+@charset "utf-8";
+
+/* ---------------------------------------- */
+
+/* config-files */
+@import "./reset";
+@import "./mixin/fonts";
+@import "./mixin/resize";
+@import "./config/variables";
+@import "./config/common";
+
+/* ---------------------------------------- */
+
+/* font-files */
+@include font-face("AGNextBold", "../font/AGNextBold.otf", otf);
+@include font-face("AGNextRegular", "../font/AGNextRegular.otf", otf);
+
+/* ---------------------------------------- */
+
+/* import-modules */
+@import "./modules/header";
+@import "./modules/main";
+@import "./modules/member";
+
+/* ---------------------------------------- */

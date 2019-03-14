@@ -1,0 +1,18 @@
+@mixin font-face($name, $path, $exts: otf woff) {
+  $src: null;
+
+  $formats: (
+    otf: "opentype",
+    woff: "woff"
+  );
+
+  @each $ext in $exts {
+    $format: map-get($formats, $ext);
+    $src: append($src, url(quote($path)) format(quote($format)), comma);
+  }
+
+  @font-face {
+    font-family: quote($name);
+    src: $src;
+  }
+}

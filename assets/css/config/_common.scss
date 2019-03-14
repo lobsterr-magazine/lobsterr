@@ -1,0 +1,82 @@
+@import "./variables";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 800px;
+  background-color: $backgroundColor;
+  margin: 0 auto;
+  padding: 0px 32px;
+  font-family: "AGNextRegular", YuGothic, sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.03rem;
+  line-height: 2;
+  color: $fontColor;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  // text-select-color
+  ::selection {
+    background: $fontSelectColor;
+    color: black;
+  }
+  ::-moz-selection {
+    background: $fontSelectColor;
+    color: black;
+  }
+
+  // responsive-test
+  // @include pc {
+  //   background-color: rgba(255, 0, 0, 0.05);
+  // }
+  // @include tab {
+  //   background-color: rgba(0, 255, 0, 0.05);
+  // }
+  // @include sp {
+  //   background-color: rgba(0, 0, 255, 0.05);
+  // }
+}
+
+a {
+  text-decoration: none;
+  color: $fontColor;
+}
+
+.notationText {
+  font-size: 2.4rem; //任意に変更してください
+  letter-spacing: 0.1rem; //任意に変更してください
+  font-weight: 800;
+  margin-bottom: 32px;
+
+  @include sp {
+    text-align: center;
+    line-height: 4rem;
+    margin-bottom: 24px;
+  }
+}
+
+.notationSign {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+
+  @include sp {
+    text-align: center;
+  }
+}
+
+.notationDate {
+  @include sp {
+    // display: block;
+    text-align: center;
+  }
+}
+
+.notationName {
+  margin-left: 8px;
+
+  @include sp {
+    margin-left: 0px;
+  }
+}
