@@ -9,7 +9,10 @@ body {
   background-color: $backgroundColor;
   margin: 0 auto;
   padding: 0px 32px;
-  font-family: "AGNextRegular", YuGothic, sans-serif;
+  // font-family: "AGNextRegular", YuGothic, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, “Helvetica Neue”, “Yu Gothic”,
+    YuGothic, “ヒラギノ角ゴ ProN W3”, Hiragino Kaku Gothic ProN, Arial,
+    “メイリオ“, Meiryo, sans-serif;
   font-size: 1.5rem;
   letter-spacing: 0.03rem;
   line-height: 2;
