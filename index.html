@@ -1,60 +1,98 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="./assets/css/style.min.css" />
-  <title>Lobsterr Magazine</title>
-</head>
+    <!-- OGP -->
+    <meta property="og:title" content="Lobsterr Magazine" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.lobsterr.co/" />
+    <meta
+      property="og:image"
+      content="https://www.lobsterr.co/assets/img/img_ogp.png"
+    />
+    <meta property="og:site_name" content="Lobsterr Magazine" />
+    <meta
+      property="og:description"
+      content="Lobsterr Magazineは、毎週届くニュースレターです。世界中の面白いビジネスやカルチャー、未来の兆しになるようなニュースを集め、感想や考えを添えてお届けします。"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
 
-<body>
-  <header>
-    <h1 class="header__logo">
-      <a href="https://www.lobsterr.co/">
-        <img src="./assets/img/img_logo.svg" alt="LOBSTERR" />
-      </a>
-    </h1>
-    <nav class="header__nav">
-      <ul>
-        <li>
-          <a href="./member.html">Member</a>
-        </li>
-        <li>
-          <a href="./blog.html">Blog</a>
-        </li>
-        <li>
-          <a href="./podcast.html">Podcast</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <div class="copyText">
-      Lobsterr Magazineは、毎週届くニュースレターです。世界中の面白いビジネスやカルチャー、未来の兆しになるようなニュースを集め、感想や考えを添えてお届けします。
-    </div>
-    <div id="mc_embed_signup" class="registrationForm">
-      <form action="https://twitter.us20.list-manage.com/subscribe/post?u=e1d44541ec8d5e0b2beaa7b0e&amp;id=75f7474027"
-        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
-        novalidate>
-        <div id="mc_embed_signup_scroll" class="registrationForm__block">
-          <input type="email" value="" name="EMAIL" class="registrationForm__email" id="mce-EMAIL"
-            placeholder="YourAddress@mail.com" required />
+    <link rel="stylesheet" href="./assets/css/style.min.css" />
+    <title>Lobsterr Magazine</title>
+  </head>
 
-          <div style="position: absolute; left: -5000px;" aria-hidden="true">
-            <input type="text" name="b_e1d44541ec8d5e0b2beaa7b0e_75f7474027" tabindex="-1" value="" />
+  <body>
+    <header>
+      <h1 class="header__logo">
+        <a href="https://www.lobsterr.co/">
+          <img src="./assets/img/img_logo.svg" alt="LOBSTERR" />
+        </a>
+      </h1>
+      <nav class="header__nav">
+        <ul>
+          <li>
+            <a href="./member.html">Member</a>
+          </li>
+          <li>
+            <a href="./blog.html">Blog</a>
+          </li>
+          <li>
+            <a href="./podcast.html">Podcast</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="copyText">
+        Lobsterr
+        Magazineは、毎週届くニュースレターです。世界中の面白いビジネスやカルチャー、未来の兆しになるようなニュースを集め、感想や考えを添えてお届けします。
+      </div>
+      <div id="mc_embed_signup" class="registrationForm">
+        <form
+          action="https://twitter.us20.list-manage.com/subscribe/post?u=e1d44541ec8d5e0b2beaa7b0e&amp;id=75f7474027"
+          method="post"
+          id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form"
+          class="validate"
+          target="_blank"
+          novalidate
+        >
+          <div id="mc_embed_signup_scroll" class="registrationForm__block">
+            <input
+              type="email"
+              value=""
+              name="EMAIL"
+              class="registrationForm__email"
+              id="mce-EMAIL"
+              placeholder="YourAddress@mail.com"
+              required
+            />
+
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input
+                type="text"
+                name="b_e1d44541ec8d5e0b2beaa7b0e_75f7474027"
+                tabindex="-1"
+                value=""
+              />
+            </div>
+
+            <!-- <div class="clear"> -->
+            <input
+              type="submit"
+              value="Subscribe"
+              name="subscribe"
+              id="mc-embedded-subscribe"
+              class="registrationForm__button"
+            />
+            <!-- </div> -->
           </div>
-
-          <!-- <div class="clear"> -->
-          <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
-            class="registrationForm__button" />
-          <!-- </div> -->
-        </div>
-      </form>
-    </div>
-    <!--End mc_embed_signup-->
-  </main>
-</body>
-
+        </form>
+      </div>
+      <!--End mc_embed_signup-->
+    </main>
+  </body>
 </html>
