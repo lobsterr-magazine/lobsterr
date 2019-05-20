@@ -4,7 +4,7 @@
 /* ---------------------------------------- */
 
 /* config-files */
-@import "./reset"; 
+@import "./reset";
 @import "./mixin/fonts";
 @import "./mixin/resize";
 @import "./config/variables";
@@ -22,5 +22,9 @@
 @import "./modules/header";
 @import "./modules/main";
 @import "./modules/member";
+@import "./modules/newsletter";
+@import "./modules/footer";
+@import "./modules/contact";
 
 /* ---------------------------------------- */
+              

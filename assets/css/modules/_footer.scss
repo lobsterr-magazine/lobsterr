@@ -1,0 +1,43 @@
+@import "../config/variables";
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1.3rem;
+  color: #D2C7BA;
+  margin-bottom: 80px;
+  margin-top: 200px;
+
+  @include tab {
+    margin-top: 160px;
+    margin-bottom: 80px;
+    // margin: 64px 0px 72px 0px;
+  }
+
+  @include sp {
+    flex-flow: column;
+    align-items: center;
+  }
+
+
+}
+
+a {
+  transition: color 0.1s; //任意に変更してください
+
+  &:hover {
+    color: $fontSelectColor; //任意に変更してください
+  }
+}
+
+
+// .mail {
+//   color: #D2C7BA;
+// }
+
+.takram {
+  color: #D2C7BA;
+}
+

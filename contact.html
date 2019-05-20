@@ -50,10 +50,28 @@
     </nav>
   </header>
   <main>
-    <div class="notationText">Podcast will be coming soon.<br /></div>
-    <div class="notationSign">
-      <span class="notationDate">2019.03.14</span>
-      <span class="notationName">Lobsterr Team</span>
+    <div class="contactform">
+      <h2 class="contactform__title">Contact</h2>
+      <p class="contactform__text">
+        Lobsterrへの連絡は下記フォームからお願いいたします。
+      </p>
+      <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label class="contactform__label">Your Name</label>
+          <input class="contactform__input" type="text" name="name" placeholder="Rob Sterling" required />
+        </p>
+        <p>
+          <label class="contactform__label">Your Email</label>
+          <input class="contactform__input" type="email" name="email" placeholder="YourAddress@mail.com" required />
+        </p>
+        <p>
+          <label class="contactform__label">Message</label>
+          <textarea class="contactform__textarea" name="message"></textarea>
+        </p>
+        <p>
+          <button class="contactform__submit" type="submit">Send</button>
+        </p>
+      </form>
     </div>
   </main>
 </body>

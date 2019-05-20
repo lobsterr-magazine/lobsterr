@@ -1,0 +1,104 @@
+@import "../config/variables";
+
+.newsletter {
+  width: 100%;
+  margin-top: 224px;
+
+  @include sp {
+    text-align: center;
+    margin-bottom: 160px;
+    margin-top: 160px;
+  }
+
+  &__title {
+    font-size: 2rem;
+    letter-spacing: 0.15rem;
+    margin-bottom: 12px;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    letter-spacing: 0.03rem;
+    line-height: 2;
+    margin-bottom: 56px;
+
+    @include sp {
+      text-align: left;
+    }
+
+  }
+
+  &__block {
+    margin-bottom: 56px;
+
+    @include sp {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__date {
+    font-size: 1.3rem;
+    font-weight: 200;
+    margin-bottom: 6px;
+    letter-spacing: 0.1rem;
+
+    @include sp {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+  }
+
+    &__headline {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        letter-spacing: 0.2rem;
+        font-weight: 600;
+
+        @include sp {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+  }
+
+  &__readmore {
+    display: block;
+    text-align: left;
+
+    @include sp {
+      border-style: solid;
+      border-width: 1px;
+      border-color: black;
+      border-radius: 2px;
+      width: calc(35%);
+      padding: 8px 16px;
+      font-size: 1.2rem;
+      text-align: center;
+      margin: 24px auto;
+    }
+
+  }
+
+
+  a {
+    transition: color 0.1s; //任意に変更してください
+
+    &:hover {
+      color: $fontSelectColor; //任意に変更してください
+    }
+  }
+
+  .sp_br {
+    display: none;
+
+    @include sp {
+      display: block;
+    }
+  }
+
+
+}
+
