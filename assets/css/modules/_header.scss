@@ -19,7 +19,7 @@ header {
 }
 
 .header__logo {
-  width: 176px;
+  width: 200px;
 
   @include sp {
     margin-bottom: 40px;
@@ -37,6 +37,8 @@ header {
     li {
       line-height: 1;
       margin-left: 48px;
+      font-size: 0.9em;
+      // letter-spacing: 0.2em;
 
       &:first-child {
         margin-left: 0px;
