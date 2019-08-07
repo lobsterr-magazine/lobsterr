@@ -2,7 +2,7 @@
 
 .newsletter {
   width: 100%;
-  margin-top: 224px;
+  margin-top: 200px;
 
   @include sp {
     text-align: center;
@@ -29,10 +29,6 @@
 
   }
 
-  // &__text span {
-  //   display: block;
-  //   margin-bottom: 0.5em;
-  // }
 
   &__block {
     margin-bottom: 56px;
@@ -53,6 +49,14 @@
       flex-flow: column;
       align-items: center;
       margin-bottom: 12px;
+    }
+  }
+
+  &__date span {
+    margin: 0px 14px;
+
+    @include sp {
+      margin: none;
     }
   }
 
